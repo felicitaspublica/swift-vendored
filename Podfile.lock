@@ -1,0 +1,82 @@
+PODS:
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage (3.0.3):
+    - PINRemoteImage/PINCache (= 3.0.3)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
+    - Texture/Core
+
+DEPENDENCIES:
+  - PINCache (from `https://github.com/pinterest/PINCache`, branch `master`)
+  - PINOperation (from `https://github.com/pinterest/PINOperation`, branch `master`)
+  - PINRemoteImage (from `https://github.com/pinterest/PINRemoteImage`, branch `master`)
+  - Texture (from `https://github.com/TextureGroup/Texture`, branch `master`)
+
+EXTERNAL SOURCES:
+  PINCache:
+    :branch: master
+    :git: https://github.com/pinterest/PINCache
+  PINOperation:
+    :branch: master
+    :git: https://github.com/pinterest/PINOperation
+  PINRemoteImage:
+    :branch: master
+    :git: https://github.com/pinterest/PINRemoteImage
+  Texture:
+    :branch: master
+    :git: https://github.com/TextureGroup/Texture
+
+CHECKOUT OPTIONS:
+  PINCache:
+    :commit: b129a79cbdf7644ac5be426b3aa0ce526b46f5ba
+    :git: https://github.com/pinterest/PINCache
+  PINOperation:
+    :commit: 6af973c07d0ae822eacf93892ad6a879abee8ddf
+    :git: https://github.com/pinterest/PINOperation
+  PINRemoteImage:
+    :commit: 543c2bce568f36dadef19e90340b0cdffc8c26b2
+    :git: https://github.com/pinterest/PINRemoteImage
+  Texture:
+    :commit: 17d4d13463c9676a53ed5ba1c48842241584fb95
+    :git: https://github.com/TextureGroup/Texture
+
+SPEC CHECKSUMS:
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  Texture: 41ce7d2fdff193a45cc8cfa3c254115cf776068a
+
+PODFILE CHECKSUM: c3935f042a58e580f0498c57e4f380e418a51583
+
+COCOAPODS: 1.10.1
