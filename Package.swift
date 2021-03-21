@@ -13,7 +13,7 @@ let package = Package(
     .library(name: "PINCache", targets: ["PINCache"]),
     .library(name: "PINOperation", targets: ["PINOperation"]),
     .library(name: "PINRemoteImage", targets: ["PINRemoteImage"]),
-    .library(name: "AsyncDisplayKit", targets: ["AsyncDisplayKit"]),
+    .library(name: "AsyncDisplayKit", targets: ["AsyncDisplayKit", "PINCache", "PINOperation", "PINRemoteImage"]),
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
