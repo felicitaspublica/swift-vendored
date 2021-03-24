@@ -10,10 +10,11 @@ let package = Package(
   ],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
+    .library(name: "AsyncDisplayKit", targets: ["AsyncDisplayKit", "PINCache", "PINOperation", "PINRemoteImage"]),
+    .library(name: "GTMAppAuth", targets: ["AppAuth", "GTMSessionFetcher"]),
     .library(name: "PINCache", targets: ["PINCache"]),
     .library(name: "PINOperation", targets: ["PINOperation"]),
     .library(name: "PINRemoteImage", targets: ["PINRemoteImage"]),
-    .library(name: "AsyncDisplayKit", targets: ["AsyncDisplayKit", "PINCache", "PINOperation", "PINRemoteImage"]),
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -22,9 +23,12 @@ let package = Package(
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
+    .binaryTarget(name: "AppAuth", path: "Frameworks/AppAuth.xcframework"),
+    .binaryTarget(name: "AsyncDisplayKit", path: "Frameworks/AsyncDisplayKit.xcframework"),
+    .binaryTarget(name: "GTMAppAuth", path: "Frameworks/GTMAppAuth.xcframework"),
+    .binaryTarget(name: "GTMSessionFetcher", path: "Frameworks/GTMSessionFetcher.xcframework"),
     .binaryTarget(name: "PINCache", path: "Frameworks/PINCache.xcframework"),
     .binaryTarget(name: "PINOperation", path: "Frameworks/PINOperation.xcframework"),
     .binaryTarget(name: "PINRemoteImage", path: "Frameworks/PINRemoteImage.xcframework"),
-    .binaryTarget(name: "AsyncDisplayKit", path: "Frameworks/AsyncDisplayKit.xcframework"),
   ]
 )
