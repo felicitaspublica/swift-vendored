@@ -1,4 +1,17 @@
 PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - GTMAppAuth (0.7.0):
+    - AppAuth
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.5.0):
+    - GTMSessionFetcher/Full (= 1.5.0)
+  - GTMSessionFetcher/Core (1.5.0)
+  - GTMSessionFetcher/Full (1.5.0):
+    - GTMSessionFetcher/Core (= 1.5.0)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
     - PINCache/Core (= 3.0.3)
@@ -38,12 +51,20 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - "GTMAppAuth (from `git@github.com:felicitaspublica/GTMAppAuth.git`)"
   - PINCache (from `https://github.com/pinterest/PINCache`, branch `master`)
   - PINOperation (from `https://github.com/pinterest/PINOperation`, branch `master`)
   - PINRemoteImage (from `https://github.com/pinterest/PINRemoteImage`, branch `master`)
   - Texture (from `https://github.com/TextureGroup/Texture`, branch `master`)
 
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - GTMSessionFetcher
+
 EXTERNAL SOURCES:
+  GTMAppAuth:
+    :git: "git@github.com:felicitaspublica/GTMAppAuth.git"
   PINCache:
     :branch: master
     :git: https://github.com/pinterest/PINCache
@@ -58,6 +79,9 @@ EXTERNAL SOURCES:
     :git: https://github.com/TextureGroup/Texture
 
 CHECKOUT OPTIONS:
+  GTMAppAuth:
+    :commit: 7bcef3d408b552d3aca9da485169452514c2235c
+    :git: "git@github.com:felicitaspublica/GTMAppAuth.git"
   PINCache:
     :commit: b129a79cbdf7644ac5be426b3aa0ce526b46f5ba
     :git: https://github.com/pinterest/PINCache
@@ -72,11 +96,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/TextureGroup/Texture
 
 SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  GTMAppAuth: 51ef52ce004f32f5a148074aa74b369d3a8ae284
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   Texture: 41ce7d2fdff193a45cc8cfa3c254115cf776068a
 
-PODFILE CHECKSUM: c3935f042a58e580f0498c57e4f380e418a51583
+PODFILE CHECKSUM: faccca28219f01d6b81ce054e73917bff4162826
 
 COCOAPODS: 1.10.1
