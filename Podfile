@@ -1,7 +1,5 @@
 plugin 'cocoapods-binary'
 
-#all_binary!
-#keep_source_code_for_prebuilt_frameworks!
 use_frameworks!
 
 target 'DummyIOSApp' do
