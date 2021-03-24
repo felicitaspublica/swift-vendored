@@ -10,11 +10,13 @@ let package = Package(
   ],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
+    .library(name: "AppAuth", targets: ["AppAuth"]),
     .library(name: "AsyncDisplayKit", targets: ["AsyncDisplayKit", "PINCache", "PINOperation", "PINRemoteImage"]),
-    .library(name: "GTMAppAuth", targets: ["AppAuth", "GTMSessionFetcher"]),
-    .library(name: "PINCache", targets: ["PINCache"]),
+    .library(name: "GTMAppAuth", targets: ["AppAuth", "GTMAppAuth", "GTMSessionFetcher"]),
+    .library(name: "GTMSessionFetcher", targets: ["GTMSessionFetcher"]),
+    .library(name: "PINCache", targets: ["PINCache", "PINOperation"]),
     .library(name: "PINOperation", targets: ["PINOperation"]),
-    .library(name: "PINRemoteImage", targets: ["PINRemoteImage"]),
+    .library(name: "PINRemoteImage", targets: ["PINCache", "PINOperation", "PINRemoteImage"]),
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
