@@ -3,7 +3,7 @@ plugin 'cocoapods-binary'
 use_frameworks!
 
 target 'DummyIOSApp' do
-  platform :ios, '14.0'
+  platform :ios, '13.6'
   pod 'GTMAppAuth', :git => 'git@github.com:felicitaspublica/GTMAppAuth.git'
   pod 'PINCache', :git => 'https://github.com/pinterest/PINCache', :branch => 'master', :inhibit_warnings => true
   pod 'PINOperation', :git => 'https://github.com/pinterest/PINOperation', :branch => 'master', :inhibit_warnings => true
